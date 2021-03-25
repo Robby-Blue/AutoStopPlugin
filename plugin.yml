@@ -1,0 +1,6 @@
+main: me.robbyblue.autostop.MainClass
+name: AutoStop
+version: 1.0
+author: Robby_Blue
+description: stops after 1 minute
+commands:
