@@ -10,9 +10,10 @@ public class JoinEvent implements Listener {
 
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e) {
-		if (MainClass.isCountingdown()) {
-			MainClass.log("Countdown stopped because a player joined");
-			MainClass.stopCountdown();
+		MainClass main = MainClass.getInstance();
+		if (main.isCountingdown()) {
+			main.log("Countdown stopped because a player joined");
+			main.stopCountdown();
 		}
 	}
 
